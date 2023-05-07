@@ -30,6 +30,7 @@
         font-size: 16px;
         line-height: 30px;
         vertical-align: middle;
+        padding: 3px;
       }
       
       .initials {
@@ -38,37 +39,39 @@
         font-size: 16px;
       }
       
-      .number {
-        text-align: center;
+           /* additional styles */
+      .b {
+        background-color: #00bbff;
       }
       
-      /* additional styles */
-      .number-box-green {
+      .g {
         background-color: #00FF00;
-        border-color: #008000;
       }
       
-      .number-box-yellow {
+      .y {
         background-color: #FFFF00;
       }
       
-      .number-box-orange {
+      .o {
         background-color: #FFA500;
       }
       
-      .number-box-red {
+      .r {
         background-color: #FF0000;
       }
-      .number-box-white {
+      .w {
         background-color: #ffffff;
       }
+
+      
+
       
     </style>
   </head>
   <body style="margin-left: 1%; margin-right: 1%;">
     <h1>D's Team</h1>
     <div style="margin: 20px; margin-left: 0px;">
-      <a style="background-color: greenyellow; border-radius: 4px; padding: 10px;">W 1</a>
+      <a style="background-color: greenyellow; border-radius: 4px; padding: 10px;">W 2</a>
       <a style="background-color: rgb(184, 234, 255); border-radius: 4px; padding: 10px;">D 0</a>
       <a style="background-color: rgb(255, 123, 123); border-radius: 4px; padding: 10px;">L 0</a>
 
@@ -76,81 +79,87 @@
     <table>
 
       <tbody>
+        <tr style="font-style: oblique;">
+          <td class="initials">Position</td>
+          <td>Name</td>
+          <td class="number"><p>Rating (last game)</p></td>
+          <td><p>Total G/A tally</p></td>
+        </tr>
         <tr style="background-color: rgb(230, 230, 230);">
-          <td class="initials">CF</td>
+          <td class="initials">CM</td>
           <td>Dean Andrews</td>
-          <td class="number"><span class="number-box  number-box-yellow">7.4</span></td>
-          <td><p></p></td>
+          <td class="number"><span class="number-box g">8.2</span></td>
+          <td><p>1 Goal</p></td>
         </tr>
         <tr>
           <td class="initials">LW</td>
           <td>Sebastian Ari</td>
-          <td class="number"><span class="number-box  number-box-orange">6.2</span></td>
-          <td><p></p></td>
+          <td class="number"><span class="number-box y">7.0</span></td>
+          <td><p>1 Assist</p></td>
         </tr>
         <tr style="background-color: rgb(230, 230, 230);">
           <td class="initials">RW</td>
           <td>Adrian Antonio</td>
-          <td class="number"><span class="number-box  number-box-green">7.9</span></td>
-          <td><p>1 goal, 1 assist</p></td>
+          <td class="number"><span class="number-box b">8.8**</span></td>
+          <td><p>3 goals, 1 assist</p></td>
         </tr>
         <tr>
           <td class="initials">CM</td>
           <td>Sam Vlack</td>
-          <td class="number"><span class="number-box  number-box-orange">6.4</span></td>
+          <td class="number"><span class="number-box o">6.8</span></td>
           <td><p></p></td>
         </tr>
         <tr style="background-color: rgb(230, 230, 230);">
           <td class="initials">CM</td>
           <td>Caleb Sexton</td>
-          <td class="number"><span class="number-box  number-box-green">8.2</span></td>
+          <td class="number"><span class="number-box y">7.4</span></td>
           <td><p></p></td>
         </tr>
         <tr>
           <td class="initials">CDM</td>
           <td>James Dodsworth</td>
-          <td class="number"><span class="number-box  number-box-green">8.4</span></td>
+          <td class="number"><span class="number-box o">6.4</span></td>
           <td><p></p></td>
         </tr>
         <tr style="background-color: rgb(230, 230, 230);">
           <td class="initials">RB</td>
           <td>Rohan Baker</td>
-          <td class="number"><span class="number-box  number-box-yellow">7.4</span></td>
-          <td><p>1 goal</p></td>
+          <td class="number"><span class="number-box b">8.6*</span></td>
+          <td><p>3 goals</p></td>
         </tr>
         <tr>
           <td class="initials">RB</td>
           <td>Sebastian Barrett</td>
-          <td class="number"><span class="number-box  number-box-orange">6.9</span></td>
+          <td class="number"><span class="number-box o">6.9</span></td>
           <td><p></p></td>
         </tr>
         <tr style="background-color: rgb(230, 230, 230);">
           <td class="initials">LB</td>
           <td>Charlie Luck</td>
-          <td class="number"><span class="number-box  number-box-orange">6.9</span></td>
+          <td class="number"><span class="number-box y">7.4</span></td>
           <td><p></p></td>
         </tr>
         <tr>
           <td class="initials">CB</td>
           <td>Finn Jones</td>
-          <td class="number"><span class="number-box  number-box-orange">6.8</span></td>
+          <td class="number"><span class="number-box w">-</span></td>
           <td><p></p></td>
         </tr>
         <tr style="background-color: rgb(230, 230, 230);">
           <td class="initials">CB</td>
           <td>Yianni Hatjinikitas</td>
-          <td class="number"><span class="number-box  number-box-yellow">7.9</span></td>
+          <td class="number"><span class="number-box g">8.0</span></td>
           <td><p></p></td>
         </tr>
         <tr>
           <td class="initials">CB</td>
           <td>Dominic Riegler</td>
-          <td class="number"><span class="number-box  number-box-white">-</span></td>
+          <td class="number"><span class="number-box o">6.9</span></td>
           <td><p></p></td>
         </tr>
         <tr style="background-color: rgb(230, 230, 230);">
           <td class="initials">GK</td>
           <td>Benjamin Webb</td>
-          <td class="number"><span class="number-box  number-box-green">8.0</span></td>
+          <td class="number"><span class="number-box y">7.9</span></td>
           <td><p></p></td>
         </tr>
