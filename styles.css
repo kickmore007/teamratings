@@ -6,7 +6,6 @@
     height: 100%;
     width: 13%;
     position: fixed;
-    z-index: 1;
     top: 0;
     right: 0;
     background-color: rgb(230, 230, 230);
@@ -15,7 +14,35 @@
     margin-left: 4%;
   }
 
+  @media screen and (max-width: 481px){
 
+    table {
+      overflow-y: auto;
+
+    }
+
+    td {
+      padding: 0;
+      
+    }
+
+    .record {
+      height: 5%;
+      width: 100%;
+      position: absolute;
+      top: auto;
+      padding-top: 4%;
+      bottom: 0;
+      background-color: rgb(181, 236, 253);
+      align-content: center;
+      margin-left: 4%;
+      overflow-y: auto;
+    }
+
+
+  
+  
+  }
 
 .record a {
       margin: auto;
@@ -35,6 +62,7 @@
   table {
     border-collapse: collapse;
     width: 100%;
+    overflow-y: scroll;
   }
   
   td {
