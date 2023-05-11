@@ -16,12 +16,13 @@
       <a style="background-color: greenyellow; border-radius: 4px; padding: 10px;">W 2</a>
       <a style="background-color: rgb(184, 234, 255); border-radius: 4px; padding: 10px;">D 0</a>
       <a style="background-color: rgb(255, 123, 123); border-radius: 4px; padding: 10px;">L 0</a>
-      <div class="record">
-        <a>Record</a>
+
+    </div>
+    <button type="button" class="collapsible">Record &#9663;</button>
+      <div class="content">
         <p>(A) Waverley 3 - 0 Cranbrook</p>
         <p>(H) Waverley 5 - 0 Barker</p>
       </div>
-    </div>
     <table>
 
       <tbody>
@@ -111,3 +112,20 @@
           <td class="number"><span class="number-box y">7.9</span></td>
           <td><p></p></td>
         </tr>
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+  </script>
+
