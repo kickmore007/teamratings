@@ -2,6 +2,11 @@
     font-family: 'Montserrat', sans-serif;
   }
 
+@font-face {
+  font-family: "GTWalsheimMD";
+  src: url(GTWalsheimPro-Medium.ttf) format('truetype');
+}
+
   .collapsible {
     background-color: #777;
     color: white;
@@ -48,10 +53,6 @@
 
     }
 
-    td {
-      padding: 0;
-      
-    }
 
     .record {
       visibility: hidden;
@@ -93,16 +94,17 @@
   }
   
   td {
-    padding: 5px;
+    padding: 10px;
   }
 
   .number-box {
     display: inline-block;
     width: 30px;
     height: 30px;
-    border: 2px solid #7b7b7b5b;
     border-radius: 5px;
     text-align: center;
+    font-family: 'GTWalsheimMD';
+    color: white;
     font-weight: bold;
     font-size: 16px;
     line-height: 30px;
@@ -118,21 +120,21 @@
   
        /* additional styles */
   .b {
-    background-color: #00bbff;
+    background-color: rgb(13,135,223);
   }
   
   .g {
-    background-color: #00FF00;
-  }
-  
-  .y {
-    background-color: #FFFF00;
+    background-color: rgb(32,200,82);
   }
   
   .o {
-    background-color: #FFA500;
+    background-color: rgb(239,128,34);
+  }
+  
+  .r {
+    background-color: #E55D5B;
   }
   
   .w {
-    background-color: #ffffff;
+    background-color: #6d6d6d;
   }
